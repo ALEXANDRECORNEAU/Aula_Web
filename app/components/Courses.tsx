@@ -1,5 +1,5 @@
 export default function Courses() {
-    return
+    return (
 <main className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
   <div className="md:col-span-2 lg:col-span-3 mt-4 text-center text-white">
     <h2>
@@ -70,4 +70,5 @@ export default function Courses() {
     </a>
   </div>
 </main>
+    )
 }
