@@ -1,4 +1,5 @@
 import { Kaushan_Script } from "next/font/google"
+
 export default function Footer() {
     return (
         <footer id="contato" className="mt-16">
