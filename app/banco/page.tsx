@@ -11,7 +11,7 @@ export default async function Cart({
     <div>
       {rows.map((row) => (
         <div key={row.id}>
-          {row.id} - {row.quantity}
+          {row.id} - {row.title}
         </div>
       ))}
     </div>
