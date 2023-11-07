@@ -18,7 +18,7 @@ export default async function ListCourse() {
                     <td></td>
                     <td>Linha2 Col2</td>
                 </tr>
-                   
+                    
                 </tbody>
             </table>
         </div>
