@@ -1,3 +1,4 @@
+
 import { sql } from "@vercel/postgres";
 export default async function ListCourse() {
     const { rows } = await sql`SELECT * from courses`;
@@ -11,10 +12,14 @@ export default async function ListCourse() {
                         <td>Descriçao</td>
                     </tr>
                 </thead>
-                <tr>
-                    <td>Linha2 Col1</td>
+                <tbody>
+               
+                <tr>                   
+                    <td></td>
                     <td>Linha2 Col2</td>
                 </tr>
+                   
+                </tbody>
             </table>
         </div>
 
