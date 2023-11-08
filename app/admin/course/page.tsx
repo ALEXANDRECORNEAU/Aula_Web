@@ -1,5 +1,6 @@
 
 import { sql } from "@vercel/postgres";
+export const revalidate = 0
 export default async function ListCourse() {
     const { rows } = await sql`SELECT * from courses`;
     return (
@@ -13,12 +14,16 @@ export default async function ListCourse() {
                     </tr>
                 </thead>
                 <tbody>
-               
-                <tr>                   
-                    <td></td>
-                    <td>Linha2 Col2</td>
-                </tr>
-                    
+                    {
+                        rows.map((course) => {
+                            return (
+                                <tr>
+                                    <dt>{course.title}</dt> 
+                                    <td>{course.description}</td>
+                                </tr>
+                            )
+                        })
+                    }
                 </tbody>
             </table>
         </div>
