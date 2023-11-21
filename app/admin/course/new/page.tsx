@@ -1,3 +1,4 @@
+import UploadButton from "@/app/components/UploadButton";
 import { sql } from "@vercel/postgres";
 
 export const revalidate =0
@@ -18,6 +19,7 @@ export default function NewCourse() {
                 <input type="text" name="title" placeholder="Digite o Título do Curso"/><br/><br/>
                 <input type="text" name="description" placeholder="Digite a Descriçao do curso"/> <br/><br/>
                 <input type="text" name="url" placeholder="Digite a url da imagem" /><br/><br/>
+                <UploadButton />
                 <button formAction={saveCourse} className="text-white">Salvar</button>
             </form>
         </div>
