@@ -1,6 +1,12 @@
 export default function Admin(){
-    return(
-        <h1>Área Adiministrativa</h1>
-    )
+    return (
+        <div>
+        <h1 className="text-center text-xl">Seja Bem Vindo</h1>
+        
+      
+    
 
+        </div>
+        
+    )
 }
