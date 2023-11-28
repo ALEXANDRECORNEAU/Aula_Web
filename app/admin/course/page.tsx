@@ -16,7 +16,8 @@ export default async function ListCourse() {
                     {
                         rows.map((course) => {
                             return (
-                                <tr key={course.id}><td>{course.title}</td> <td>{course.description}</td> </tr>
+                                <tr key={course.id}><td>{course.title}</td> <td>{course.description}</td> 
+                                <td><button formAction={deletrCourse}>"Excluir"</button></td>
                             )
                         })
                     }
