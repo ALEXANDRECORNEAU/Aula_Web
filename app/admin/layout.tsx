@@ -14,8 +14,6 @@ export default function AdminLayout({
                 <div className="p-12 w-screen">
                 {children}
                 </div>
-                
-
             </div>
 
         </div>

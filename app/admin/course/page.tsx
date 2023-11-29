@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 
@@ -13,7 +14,7 @@ export default async function ListCourse() {
     const { rows } = await sql`SELECT * from courses`;
     return (
         <div>
-            <h1 className="text-center text-white">Lista de Cursos</h1>
+            <h1 className="text-center ">Lista de Cursos</h1>
 
             <table>
                 <thead>
@@ -27,7 +28,8 @@ export default async function ListCourse() {
                                 <td>
                                     <form >
                                      <input type="text" hidden name="id" value={course.id}/>   
-                                    <button formAction={deleteCourse}>Excluir</button>
+                                    <Button variant= "destructive"
+                                     formAction={deleteCourse}>Excluir</Button>
                                     </form>
                                 
                                 </td> 
